@@ -1,0 +1,44 @@
+header {
+    width: 100%;
+    background-color: $header-color;
+    color: $content-color;
+    position: fixed;
+    top:0;
+    z-index: 1;
+
+    .inclusive {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo{
+                
+            a{
+                font-size: 1.5rem;
+                padding: 1rem 0;
+                color: $content-color;
+            }
+
+        }
+
+        .link-flexbox{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                padding: 1rem 0.7rem;
+                font-size: 1rem;
+
+                a{
+                    color: $content-color;
+                }
+            }
+
+        }
+
+    }
+
+}

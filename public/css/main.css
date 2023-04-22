@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif !important; }
+
+html {
+  scroll-behavior: smooth; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("../../public/font/proxima_nova_bold-webfont.woff") format("woff"), url("../../public/font/proxima_nova_bold-webfont.woff") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'proxima_nova_ltlight';
+  src: url("../../public/font/proxima_nova_light-webfont.woff") format("woff"), url("../../public/font/proxima_nova_light-webfont.woff") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'proxima_nova_rgregular';
+  src: url("../../public/font/proxima_nova_regular-webfont.woff") format("woff"), url("../../public/font/proxima_nova_regular-webfont.woff") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'proxima_nova_ltsemibold';
+  src: url("../../public/font/proxima_nova_semibold-webfont.woff") format("woff"), url("../../public/font/proxima_nova_semibold-webfont.woff") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+.container {
+  max-width: 75rem;
+  margin: auto; }
+
+.border-bottom {
+  height: 3px;
+  width: 100%;
+  background-color: #f39c12;
+  margin: 0.5rem 0; }
+
+b,
+strong {
+  font-weight: bold !important; }
+
+i,
+em {
+  font-style: italic !important; }
+
+.anchor {
+  margin-top: -60px;
+  padding-top: 60px;
+  display: inline-block;
+  visibility: hidden; }
+
+#button-top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  z-index: 1;
+  background-color: brown;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: background-color .3s, opacity .5s, visibility .5s; }
+
+.button-i {
+  color: #fff;
+  font-weight: bold; }
+
+#button-top.show {
+  opacity: 1;
+  visibility: visible; }
+
+header {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 1; }
+  header .inclusive {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .inclusive .logo a {
+      font-size: 1.5rem;
+      padding: 1rem 0;
+      color: #fff; }
+    header .inclusive .link-flexbox {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header .inclusive .link-flexbox li {
+        padding: 1rem 0.7rem;
+        font-size: 1rem; }
+        header .inclusive .link-flexbox li a {
+          color: #fff; }
+
+.table-of-contents-area {
+  width: 100%;
+  background-color: #7f8c8d;
+  margin-top: 3rem;
+  color: #fff; }
+  .table-of-contents-area .guide-title {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    font-weight: bold; }
+  .table-of-contents-area .table-of-contents-list {
+    width: 100%;
+    padding: 1rem 0 1.3rem; }
+    .table-of-contents-area .table-of-contents-list ul {
+      border-left: 2px solid #2c3e50;
+      padding-left: 1rem;
+      padding: 0 1rem; }
+      .table-of-contents-area .table-of-contents-list ul li {
+        font-size: 1.1rem;
+        padding: 0.7rem 0; }
+        .table-of-contents-area .table-of-contents-list ul li a {
+          color: #fff; }
+
+.start-content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0; }
+
+.start-content p {
+  padding: 0.8rem 0;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.5; }
+
+.start-content .mini-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 0; }
+
+.start-content .war-content {
+  margin: 1rem 0; }
+  .start-content .war-content .ingredients-area {
+    width: 100%;
+    margin-bottom: 2rem; }
+    .start-content .war-content .ingredients-area ul {
+      border-left: 2px solid #002a5c;
+      padding-left: 0.2rem;
+      margin: 1.2rem 0; }
+      .start-content .war-content .ingredients-area ul li {
+        padding: 0.5rem;
+        font-weight: bold; }
+        .start-content .war-content .ingredients-area ul li span {
+          color: #638bae;
+          font-weight: 500;
+          display: block;
+          padding: 0.2rem 0;
+          letter-spacing: 3px; }
+        .start-content .war-content .ingredients-area ul li a {
+          color: #337ab7; }
+        .start-content .war-content .ingredients-area ul li a:hover {
+          color: #23527c; }
+    .start-content .war-content .ingredients-area .inside-ul {
+      margin: 0.5rem; }
+  .start-content .war-content .title-image-area {
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    .start-content .war-content .title-image-area .title-image {
+      width: 3rem; }
+    .start-content .war-content .title-image-area .title {
+      margin-left: 1rem; }
+  .start-content .war-content .mini-info-area {
+    width: 100%;
+    margin: 1rem 0;
+    margin: 1rem 0 4rem 0;
+    display: flex; }
+    .start-content .war-content .mini-info-area .mini-info-content-box {
+      width: 66.667%; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area {
+        width: 100%; }
+        .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area .image-slider-container {
+          width: 100%; }
+          .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area .image-slider-container .image-ti-box {
+            border: 1px solid #c8ccd1;
+            background-color: #f8f9fa;
+            margin-left: 10px; }
+            .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area .image-slider-container .image-ti-box .img {
+              padding: 5px; }
+            .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area .image-slider-container .image-ti-box .img-text {
+              width: 100%;
+              padding: 5px 5px; }
+              .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area .image-slider-container .image-ti-box .img-text p {
+                font-size: 1rem; }
+          .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area .image-slider-container .image-ti-box:first-child {
+            margin: 0; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .mini-main-title {
+        width: 100%;
+        font-weight: 600;
+        margin-bottom: 0.5rem; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .mini-main-paragraph {
+        width: 100%; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .info-content-image-text {
+        width: 100%;
+        border: 1px solid #c8ccd1;
+        background-color: #f8f9fa; }
+        .start-content .war-content .mini-info-area .mini-info-content-box .info-content-image-text .info-image-box {
+          width: 100%; }
+        .start-content .war-content .mini-info-area .mini-info-content-box .info-content-image-text .image-text span {
+          margin: 0.5rem 5px;
+          display: block; }
+    .start-content .war-content .mini-info-area .mini-info-war-box {
+      width: 33.333%;
+      margin-left: 3rem;
+      height: 100%;
+      min-height: 0;
+      background-color: #f8f9fa;
+      border: 1px solid #a2a9b1; }
+      .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area {
+        width: 100%;
+        margin: 1rem 0; }
+        .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area .mini-info-war-content-main-title {
+          text-align: center;
+          background-color: #C3D6EF; }
+          .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area .mini-info-war-content-main-title h4 {
+            padding: 0.5rem; }
+        .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area .war-info-part-title {
+          display: flex;
+          justify-content: center;
+          background-color: #dcdcdc;
+          margin: 0.3rem 0; }
+          .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area .war-info-part-title h5 {
+            padding: 0.5rem; }
+        .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area .war-info-image-box {
+          width: 100%; }
+        .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area .war-info-image-content-box {
+          width: 100%;
+          display: flex;
+          text-align: center; }
+          .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area .war-info-image-content-box span {
+            display: block;
+            margin: 1rem; }
+          .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area .war-info-image-content-box p {
+            text-align: center;
+            font-size: 1rem; }
+      .start-content .war-content .mini-info-area .mini-info-war-box .war-info-content-box-area {
+        width: 100%;
+        margin: 1rem 0; }
+        .start-content .war-content .mini-info-area .mini-info-war-box .war-info-content-box-area .war-info-content-container {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap; }
+          .start-content .war-content .mini-info-area .mini-info-war-box .war-info-content-box-area .war-info-content-container .war-info-content-div {
+            display: flex; }
+            .start-content .war-content .mini-info-area .mini-info-war-box .war-info-content-box-area .war-info-content-container .war-info-content-div .war-info-title {
+              flex-basis: 3rem;
+              margin: 0 0.5rem; }
+            .start-content .war-content .mini-info-area .mini-info-war-box .war-info-content-box-area .war-info-content-container .war-info-content-div .war-info-content {
+              display: flex;
+              flex-direction: column;
+              width: 70%; }
+              .start-content .war-content .mini-info-area .mini-info-war-box .war-info-content-box-area .war-info-content-container .war-info-content-div .war-info-content span {
+                margin-bottom: 1rem;
+                display: block; }
+      .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area {
+        width: 100%;
+        margin: 1rem 0; }
+        .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0.5rem 0.5rem;
+          align-items: center; }
+          .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap; }
+            .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box {
+              width: 100%;
+              align-items: center;
+              display: flex;
+              margin: 0.5rem 0; }
+              .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box .war-belligerents-image {
+                width: 2rem; }
+                .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box .war-belligerents-image .border-img {
+                  border: 1px solid #eaecf0; }
+              .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box .war-belligerents-name {
+                margin-left: 5px; }
+            .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list {
+              width: 100%;
+              align-items: center;
+              display: flex;
+              margin: 0.5rem 0;
+              flex-wrap: wrap; }
+              .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-name {
+                margin-left: 5px; }
+              .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-image img {
+                width: 2rem; }
+              .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-list {
+                width: 100%;
+                display: flex;
+                margin: 0.9rem 0px 0rem; }
+                .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-list .war-belligerents-unorderer-list:first-child {
+                  margin-top: 3px; }
+                .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-list .war-belligerents-unorderer-list {
+                  list-style-position: inside;
+                  list-style-type: disc; }
+                  .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-list .war-belligerents-unorderer-list .war-belligerents-unorderer-inside-list .war-belligerents-main-text-image-box {
+                    display: inline-flex; }
+                    .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-list .war-belligerents-unorderer-list .war-belligerents-unorderer-inside-list .war-belligerents-main-text-image-box img {
+                      width: 2rem; }
+                    .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-list .war-belligerents-unorderer-list .war-belligerents-unorderer-inside-list .war-belligerents-main-text-image-box span {
+                      margin-left: 5px; }
+          .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-axis-box-area {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap; }
+            .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-axis-box-area .war-belligerents-box {
+              width: 100%;
+              align-items: center;
+              display: inline-flex;
+              margin: 0.5rem 0; }
+              .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-axis-box-area .war-belligerents-box .war-belligerents-image {
+                width: 2rem; }
+                .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-axis-box-area .war-belligerents-box .war-belligerents-image .border-img {
+                  border: 1px solid #eaecf0; }
+              .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-axis-box-area .war-belligerents-box .war-belligerents-name {
+                margin-left: 5px;
+                display: flex;
+                align-items: center; }
+  .start-content .war-content .ww2-belligerents-area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .start-content .war-content .ww2-belligerents-area .belligerents-sides {
+      width: 66.667%; }
+      .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area {
+        width: 100%;
+        margin-left: -5px; }
+        .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box {
+          display: flex;
+          flex: 1 1 auto;
+          align-items: center;
+          margin: 0.8rem 0; }
+          .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .allied-belligerents-list {
+            width: 100%; }
+            .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .allied-belligerents-list .belligerents-ul {
+              display: list-item;
+              list-style: disc;
+              margin: 0px 17px; }
+              .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .allied-belligerents-list .belligerents-ul li {
+                display: list-item;
+                margin-bottom: 10px;
+                list-style-type: disc; }
+                .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .allied-belligerents-list .belligerents-ul li .main-image-text-content {
+                  display: flex;
+                  align-items: center; }
+                  .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .allied-belligerents-list .belligerents-ul li .main-image-text-content .colonial-country-name {
+                    margin-left: 10px; }
+                .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .allied-belligerents-list .belligerents-ul li img {
+                  width: 2rem; }
+          .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .allied-belligerents-flag {
+            width: 2rem; }
+            .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .allied-belligerents-flag .flag-space {
+              padding: 5px; }
+          .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .allied-belligerents-text p {
+            padding: 0 0.5rem; }
+          .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .flex-basis {
+            flex: 1 1;
+            margin-right: 1.25rem; }
+          .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .margin-bottom-paragraph {
+            margin-bottom: 10px; }
+          .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box b {
+            font-weight: bold; }
+  .start-content .war-content .belligerents-main-box {
+    width: 33.333%;
+    border: 1px solid #c8ccd1;
+    background-color: #f8f9fa;
+    padding: 0.2rem;
+    min-height: 0;
+    height: 100%;
+    position: sticky;
+    top: 4rem; }
+    .start-content .war-content .belligerents-main-box .belligerents-image-box {
+      width: 100%; }
+      .start-content .war-content .belligerents-main-box .belligerents-image-box .belligerents-image {
+        border: 1px solid #c8ccd1; }
+  .start-content .war-content .belligerents-map-info-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left; }
+    .start-content .war-content .belligerents-map-info-box .allied-color-main-box {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 0.1rem; }
+      .start-content .war-content .belligerents-map-info-box .allied-color-main-box .allied-color {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #000;
+        background-color: #009E60; }
+      .start-content .war-content .belligerents-map-info-box .allied-color-main-box .pearl-harbor {
+        background-color: #00FF00; }
+      .start-content .war-content .belligerents-map-info-box .allied-color-main-box .axis-color {
+        background-color: #007FFF; }
+      .start-content .war-content .belligerents-map-info-box .allied-color-main-box .neutral-states {
+        background-color: #C0C0C0; }
+      .start-content .war-content .belligerents-map-info-box .allied-color-main-box .allied-text-box {
+        margin: 0 0.5rem; }
+      .start-content .war-content .belligerents-map-info-box .allied-color-main-box .pearl-harbor-span {
+        width: 15rem;
+        display: inline-block; }

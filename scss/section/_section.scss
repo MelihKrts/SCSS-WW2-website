@@ -1,0 +1,576 @@
+.table-of-contents-area {
+    width: 100%;
+    background-color: #7f8c8d;
+    margin-top: 3rem;
+    color: #fff;
+
+    .guide-title {
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    .table-of-contents-list {
+        width: 100%;
+        padding: 1rem 0 1.3rem;
+
+        ul {
+            border-left: 2px solid #2c3e50;
+            padding-left: 1rem;
+            padding: 0 1rem;
+
+            li {
+                font-size: 1.1rem;
+                padding: 0.7rem 0;
+
+                a {
+                    color: #fff;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.start-content {
+
+
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1rem 0;
+    }
+
+
+    p {
+        padding: 0.8rem 0;
+        text-align: justify;
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+
+    .mini-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 0.5rem 0;
+    }
+
+    .war-content {
+        margin: 1rem 0;
+
+        .ingredients-area{
+            width: 100%;
+            margin-bottom: 2rem;
+            
+
+            ul{
+                border-left: 2px solid #002a5c;
+                padding-left: 0.2rem;
+                margin: 1.2rem 0;
+                
+                
+
+                li{
+                    padding: 0.5rem;
+                    font-weight: bold;
+                    
+
+                    span{
+                        color: #638bae;
+                        font-weight: 500;
+                        display: block;
+                        padding: 0.2rem 0;
+                        letter-spacing: 3px;
+                    }
+
+                    a{
+                        
+                        color: #337ab7;
+                    }
+
+                    a:hover{
+                        color: #23527c;
+                    }
+
+                }
+
+            }
+
+            .inside-ul{
+                margin: 0.5rem;
+            }
+
+        }
+
+        .title-image-area {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .title-image {
+                width: 3rem;
+            }
+
+            .title {
+                margin-left: 1rem;
+            }
+        }
+
+        .mini-info-area {
+            width: 100%;
+            margin: 1rem 0;
+            margin: 1rem 0 4rem 0;
+            display: flex;
+
+            .mini-info-content-box {
+                width: 66.667%;
+
+                .image-slider-area {
+                    width: 100%;
+
+                    .image-slider-container{
+                        width: 100%;
+
+                        .image-ti-box{
+                            border: 1px solid #c8ccd1;
+                            background-color: #f8f9fa;
+                            margin-left: 10px;
+    
+                            .img{
+                                padding: 5px;
+                            }
+    
+                            .img-text{
+                                width: 100%;
+                                padding: 5px 5px;
+
+                                p{
+                                    font-size: 1rem;
+                                }
+                            }
+    
+                        }
+
+                        .image-ti-box:first-child{
+                            margin: 0;
+                        }
+
+                    }
+
+                }
+
+                .mini-main-title {
+                    width: 100%;
+                    font-weight: 600;
+                    margin-bottom: 0.5rem;
+                }
+
+                .mini-main-paragraph {
+                    width: 100%;
+                }
+
+                .info-content-image-text {
+                    width: 100%;
+                    border: 1px solid #c8ccd1;
+                    background-color: #f8f9fa;
+
+                    .info-image-box {
+                        width: 100%;
+                    }
+
+                    .image-text {
+
+                        span {
+                            margin: 0.5rem 5px;
+                            display: block;
+                        }
+                    }
+
+                }
+
+            }
+
+            .mini-info-war-box {
+                width: 33.333%;
+                margin-left: 3rem;
+                height: 100%;
+                min-height: 0;
+                background-color: #f8f9fa;
+                border: 1px solid #a2a9b1;
+
+                .mini-info-war-content-area {
+                    width: 100%;
+                    margin: 1rem 0;
+
+                    .mini-info-war-content-main-title {
+                        text-align: center;
+                        background-color: #C3D6EF;
+
+                        h4 {
+                            padding: 0.5rem;
+                        }
+
+                    }
+
+                    .war-info-part-title {
+                        display: flex;
+                        justify-content: center;
+                        background-color: #dcdcdc;
+                        margin: 0.3rem 0;
+
+                        h5 {
+                            padding: 0.5rem;
+                        }
+
+                    }
+
+                    .war-info-image-box {
+                        width: 100%;
+                    }
+
+                    .war-info-image-content-box {
+                        width: 100%;
+                        display: flex;
+                        text-align: center;
+
+                        span{
+                            display: block;
+                            margin: 1rem;
+                        }
+
+                        p {
+                            text-align: center;
+                            font-size: 1rem;
+                        }
+                    }
+
+                }
+
+                .war-info-content-box-area {
+                    width: 100%;
+                    margin: 1rem 0;
+
+                    .war-info-content-container {
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: wrap;
+
+                        .war-info-content-div {
+                            display: flex;
+
+
+                            .war-info-title {
+                                flex-basis: 3rem;
+                                margin: 0 0.5rem;
+                            }
+
+                            .war-info-content {
+                                display: flex;
+                                flex-direction: column;
+                                width: 70%;
+
+                                span {
+                                    margin-bottom: 1rem;
+                                    display: block;
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                .war-belligerents-info-area {
+                    width: 100%;
+                    margin: 1rem 0;
+
+                    .war-belligerents-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 0.5rem 0.5rem;
+                        align-items: center;
+
+                        .war-allied-box-area {
+                            width: 50%;
+                            display: flex;
+                            flex-wrap: wrap;
+
+
+                            .war-belligerents-box {
+                                width: 100%;
+                                align-items: center;
+                                display: flex;
+                                margin: 0.5rem 0;
+
+                                .war-belligerents-image {
+                                    width: 2rem;
+
+                                    .border-img {
+                                        border: 1px solid #eaecf0;
+                                    }
+                                }
+
+                                .war-belligerents-name {
+                                    margin-left: 5px;
+                                }
+                            }
+
+                            .war-belligerents-box-list {
+                                width: 100%;
+                                align-items: center;
+                                display: flex;
+                                margin: 0.5rem 0;
+                                flex-wrap: wrap;
+
+                                .war-belligerents-name {
+                                    margin-left: 5px;
+                                }
+
+                                .war-belligerents-image img {
+                                    width: 2rem;
+                                }
+
+                                .war-belligerents-list {
+
+                                    width: 100%;
+                                    display: flex;
+                                    margin: 0.9rem 0px 0rem;
+
+                                    .war-belligerents-unorderer-list:first-child {
+                                        margin-top: 3px;
+                                    }
+
+                                    .war-belligerents-unorderer-list {
+
+                                        list-style-position: inside;
+                                        list-style-type: disc;
+
+                                        .war-belligerents-unorderer-inside-list {
+
+                                            .war-belligerents-main-text-image-box {
+                                                display: inline-flex;
+
+                                                img {
+                                                    width: 2rem;
+                                                }
+
+                                                span {
+                                                    margin-left: 5px;
+                                                }
+
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                        .war-axis-box-area {
+                            width: 50%;
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+
+
+                            .war-belligerents-box {
+                                width: 100%;
+                                align-items: center;
+                                display: inline-flex;
+                                margin: 0.5rem 0;
+
+                                .war-belligerents-image {
+                                    width: 2rem;
+
+                                    .border-img {
+                                        border: 1px solid #eaecf0;
+                                    }
+                                }
+
+                                .war-belligerents-name {
+                                    margin-left: 5px;
+                                    display: flex;
+                                    align-items: center;
+                                }
+
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+
+
+
+
+
+        .ww2-belligerents-area {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .belligerents-sides {
+                width: 66.667%;
+
+
+                .allied-belligerents-box-area {
+                    width: 100%;
+                    margin-left: -5px;
+
+                    .allied-belligerents-box {
+                        display: flex;
+                        flex: 1 1 auto;
+                        align-items: center;
+                        margin: 0.8rem 0;
+
+                        .allied-belligerents-list {
+                            width: 100%;
+
+                            .belligerents-ul {
+                                display: list-item;
+                                list-style: disc;
+                                margin: 0px 17px;
+
+                                li {
+                                    display: list-item;
+                                    margin-bottom: 10px;
+                                    list-style-type: disc;
+
+                                    .main-image-text-content {
+                                        display: flex;
+                                        align-items: center;
+
+                                        .colonial-country-name {
+                                            margin-left: 10px;
+                                        }
+
+                                    }
+
+                                    img {
+                                        width: 2rem;
+                                    }
+                                }
+
+                            }
+
+                        }
+
+                        .allied-belligerents-flag {
+                            width: 2rem;
+
+                            .flag-space {
+                                padding: 5px;
+                            }
+
+                        }
+
+                        .allied-belligerents-text {
+                            p {
+                                padding: 0 0.5rem;
+                            }
+                        }
+
+                        .flex-basis {
+                            flex: 1 1;
+                            margin-right: 1.25rem;
+                        }
+
+                        .margin-bottom-paragraph {
+                            margin-bottom: 10px;
+                        }
+
+                        b {
+                            font-weight: bold;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .belligerents-main-box {
+
+            width: 33.333%;
+            border: 1px solid #c8ccd1;
+            background-color: #f8f9fa;
+            padding: 0.2rem;
+            min-height: 0;
+            height: 100%;
+            position: sticky;
+            top: 4rem;
+
+            .belligerents-image-box {
+                width: 100%;
+
+                .belligerents-image {
+                    border: 1px solid #c8ccd1;
+                }
+
+            }
+
+        }
+
+        .belligerents-map-info-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: left;
+
+            .allied-color-main-box {
+                display: flex;
+                align-items: center;
+                margin: 0.5rem 0.1rem;
+
+                .allied-color {
+                    width: 25px;
+                    height: 25px;
+                    border: 1px solid #000;
+                    background-color: #009E60;
+                }
+
+                .pearl-harbor {
+                    background-color: #00FF00;
+                }
+
+                .axis-color {
+                    background-color: #007FFF;
+                }
+
+                .neutral-states {
+                    background-color: #C0C0C0;
+                }
+
+
+                .allied-text-box {
+                    margin: 0 0.5rem;
+                }
+
+                .pearl-harbor-span {
+                    width: 15rem;
+                    display: inline-block;
+
+                }
+
+            }
+
+        }
+    }
+
+}

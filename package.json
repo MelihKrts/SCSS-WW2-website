@@ -1,0 +1,16 @@
+{
+  "name": "sass_ww2_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w scss/ -o public/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.0",
+    "smooth-scrollbar": "^8.8.3"
+  }
+}

@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('../../public/font/proxima_nova_bold-webfont.woff') format('woff'), url('../../public/font/proxima_nova_bold-webfont.woff') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'proxima_nova_ltlight';
+    src: url('../../public/font/proxima_nova_light-webfont.woff') format('woff'), url('../../public/font/proxima_nova_light-webfont.woff') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../../public/font/proxima_nova_regular-webfont.woff') format('woff'), url('../../public/font/proxima_nova_regular-webfont.woff') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'proxima_nova_ltsemibold';
+    src: url('../../public/font/proxima_nova_semibold-webfont.woff') format('woff'), url('../../public/font/proxima_nova_semibold-webfont.woff') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap
+}
+
+
+.container {
+    max-width: $max-width;
+    margin: auto;
+}
+
+.border-bottom {
+    height: 3px;
+    width: 100%;
+    background-color: $border-bottom-color;
+    margin: 0.5rem 0;
+}
+
+b,
+strong {
+    font-weight: bold !important;
+}
+
+i,
+em {
+    font-style: italic !important;
+}
+
+.anchor{
+    margin-top: -60px;
+    padding-top: 60px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+#button-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 1;
+    background-color: brown;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+}
+
+.button-i{
+    color: #fff;
+    font-weight: bold;
+}
+
+#button-top.show {
+    opacity: 1;
+    visibility: visible;
+}
