@@ -262,8 +262,9 @@
 
 
                             .war-info-title {
-                                flex-basis: 3rem;
+                                flex-basis: 6rem;
                                 margin: 0 0.5rem;
+                                width: 25%;
                             }
 
                             .war-info-content {
@@ -353,6 +354,7 @@
 
                                             .war-belligerents-main-text-image-box {
                                                 display: inline-flex;
+                                                align-items: center;
 
                                                 img {
                                                     width: 2rem;

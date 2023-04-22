@@ -270,8 +270,9 @@ header {
           .start-content .war-content .mini-info-area .mini-info-war-box .war-info-content-box-area .war-info-content-container .war-info-content-div {
             display: flex; }
             .start-content .war-content .mini-info-area .mini-info-war-box .war-info-content-box-area .war-info-content-container .war-info-content-div .war-info-title {
-              flex-basis: 3rem;
-              margin: 0 0.5rem; }
+              flex-basis: 6rem;
+              margin: 0 0.5rem;
+              width: 25%; }
             .start-content .war-content .mini-info-area .mini-info-war-box .war-info-content-box-area .war-info-content-container .war-info-content-div .war-info-content {
               display: flex;
               flex-direction: column;
@@ -322,7 +323,8 @@ header {
                   list-style-position: inside;
                   list-style-type: disc; }
                   .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-list .war-belligerents-unorderer-list .war-belligerents-unorderer-inside-list .war-belligerents-main-text-image-box {
-                    display: inline-flex; }
+                    display: inline-flex;
+                    align-items: center; }
                     .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-list .war-belligerents-unorderer-list .war-belligerents-unorderer-inside-list .war-belligerents-main-text-image-box img {
                       width: 2rem; }
                     .start-content .war-content .mini-info-area .mini-info-war-box .war-belligerents-info-area .war-belligerents-container .war-allied-box-area .war-belligerents-box-list .war-belligerents-list .war-belligerents-unorderer-list .war-belligerents-unorderer-inside-list .war-belligerents-main-text-image-box span {
