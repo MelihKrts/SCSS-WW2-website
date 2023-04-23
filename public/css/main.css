@@ -267,7 +267,8 @@ header {
           display: flex;
           justify-content: center;
           background-color: #dcdcdc;
-          margin: 0.3rem 0; }
+          margin: 0.3rem 0;
+          text-align: center; }
           .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area .war-info-part-title h5 {
             padding: 0.5rem; }
         .start-content .war-content .mini-info-area .mini-info-war-box .mini-info-war-content-area .war-info-image-box {
