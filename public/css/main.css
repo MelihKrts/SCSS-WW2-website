@@ -157,6 +157,10 @@ header {
 
 .start-content .war-content {
   margin: 1rem 0; }
+  .start-content .war-content blockquote {
+    border-left: 4px solid #eaecf0;
+    padding: 8px 32px;
+    margin-bottom: 2rem; }
   .start-content .war-content .ingredients-area {
     width: 100%;
     margin-bottom: 2rem; }
@@ -192,6 +196,24 @@ header {
     margin: 1rem 0;
     margin: 1rem 0 4rem 0;
     display: flex; }
+    .start-content .war-content .mini-info-area .mini-ii-area {
+      width: 33.333%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 3rem;
+      height: 100%;
+      min-height: 0; }
+      .start-content .war-content .mini-info-area .mini-ii-area .mini-iwib {
+        border: 1px solid #c8ccd1;
+        background-color: #f8f9fa; }
+        .start-content .war-content .mini-info-area .mini-ii-area .mini-iwib span {
+          text-align: center;
+          padding: 1rem 0;
+          display: flex;
+          line-height: 1.3; }
+      .start-content .war-content .mini-info-area .mini-ii-area .mini-info-war-box {
+        width: 100%;
+        margin: 1rem 0; }
     .start-content .war-content .mini-info-area .mini-info-content-box {
       width: 66.667%; }
       .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area {
