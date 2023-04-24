@@ -60,30 +60,66 @@
     .war-content {
         margin: 1rem 0;
 
-        blockquote{
+        blockquote {
             border-left: 4px solid #eaecf0;
             padding: 8px 32px;
-            margin-bottom:2rem;
+            margin-bottom: 2rem;
         }
 
-        .ingredients-area{
+        .mini {
+            width: 100%;
+            margin-right: 1rem;
+            display: flex;
+            flex-direction: row;
+
+            .it-area {
+                width: 50%;
+                border: 1px solid #c8ccd1;
+                background-color: #f8f9fa;
+                margin-bottom: 1rem;
+                height: 100%;
+                min-height: 0;
+
+                .img {
+                    background-color: #ffffff;
+                    border: 1px solid #c8ccd1;
+                }
+
+                .it {
+                    width: 100%;
+
+                    p {
+                        line-height: 1.4;
+                        padding: 0.5rem;
+                        text-align: center;
+                    }
+                }
+
+            }
+
+            .it-area:nth-child(2){
+                margin-left: 1rem;
+            }
+        }
+
+        .ingredients-area {
             width: 100%;
             margin-bottom: 2rem;
-            
 
-            ul{
+
+            ul {
                 border-left: 2px solid #002a5c;
                 padding-left: 0.2rem;
                 margin: 1.2rem 0;
-                
-                
 
-                li{
+
+
+                li {
                     padding: 0.5rem;
                     font-weight: bold;
-                    
 
-                    span{
+
+                    span {
                         color: #638bae;
                         font-weight: 500;
                         display: block;
@@ -91,12 +127,12 @@
                         letter-spacing: 3px;
                     }
 
-                    a{
-                        
+                    a {
+
                         color: #337ab7;
                     }
 
-                    a:hover{
+                    a:hover {
                         color: #23527c;
                     }
 
@@ -104,7 +140,7 @@
 
             }
 
-            .inside-ul{
+            .inside-ul {
                 margin: 0.5rem;
             }
 
@@ -130,7 +166,7 @@
             margin: 1rem 0 4rem 0;
             display: flex;
 
-            .mini-ii-area{
+            .mini-ii-area {
                 width: 33.333%;
                 display: flex;
                 flex-direction: column;
@@ -138,11 +174,11 @@
                 height: 100%;
                 min-height: 0;
 
-                .mini-iwib{
+                .mini-iwib {
                     border: 1px solid #c8ccd1;
                     background-color: #f8f9fa;
 
-                    span{
+                    span {
                         text-align: center;
                         padding: 1rem 0;
                         display: flex;
@@ -150,7 +186,7 @@
                     }
                 }
 
-                .mini-info-war-box{
+                .mini-info-war-box {
                     width: 100%;
                     margin: 1rem 0;
 
@@ -161,33 +197,63 @@
             .mini-info-content-box {
                 width: 66.667%;
 
+                .content-ia{
+                    width: 100%;
+                    display: flex;
+                    
+                    .content-i{
+                        width: 50%;
+                        border: 1px solid #c8ccd1;
+                        background-color: #f8f9fa;
+                        height: 100%;
+                        min-height: 0;
+
+                        img{
+                            background-color: #ffffff;
+                            border: 1px solid #c8ccd1;
+                        }
+                        
+                        span{
+                            display: block;
+                            margin: 1rem 0.5rem;
+                            line-height: 1.5;
+                        }
+
+                    }
+
+                    .content-i:nth-child(2){
+                        margin-left: 10px;
+                    }
+
+                }
+
                 .image-slider-area {
                     width: 100%;
 
-                    .image-slider-container{
+                    .image-slider-container {
                         width: 100%;
 
-                        .image-ti-box{
+                        .image-ti-box {
                             border: 1px solid #c8ccd1;
                             background-color: #f8f9fa;
                             margin-left: 10px;
-    
-                            .img{
+
+                            .img {
                                 padding: 5px;
                             }
-    
-                            .img-text{
+
+                            .img-text {
                                 width: 100%;
                                 padding: 5px 5px;
 
-                                p{
+                                p {
                                     font-size: 1rem;
                                 }
                             }
-    
+
                         }
 
-                        .image-ti-box:first-child{
+                        .image-ti-box:first-child {
                             margin: 0;
                         }
 
@@ -270,7 +336,7 @@
                         display: flex;
                         text-align: center;
 
-                        span{
+                        span {
                             display: block;
                             margin: 1rem;
                         }
@@ -449,10 +515,6 @@
         }
 
 
-
-
-
-
         .ww2-belligerents-area {
             width: 100%;
             display: flex;
@@ -470,7 +532,7 @@
                     .allied-belligerents-box {
                         display: flex;
                         flex: 1 1 auto;
-                        align-items: center;
+                        align-items: flex-start;
                         margin: 0.8rem 0;
 
                         .allied-belligerents-list {

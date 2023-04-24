@@ -161,6 +161,29 @@ header {
     border-left: 4px solid #eaecf0;
     padding: 8px 32px;
     margin-bottom: 2rem; }
+  .start-content .war-content .mini {
+    width: 100%;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: row; }
+    .start-content .war-content .mini .it-area {
+      width: 50%;
+      border: 1px solid #c8ccd1;
+      background-color: #f8f9fa;
+      margin-bottom: 1rem;
+      height: 100%;
+      min-height: 0; }
+      .start-content .war-content .mini .it-area .img {
+        background-color: #ffffff;
+        border: 1px solid #c8ccd1; }
+      .start-content .war-content .mini .it-area .it {
+        width: 100%; }
+        .start-content .war-content .mini .it-area .it p {
+          line-height: 1.4;
+          padding: 0.5rem;
+          text-align: center; }
+    .start-content .war-content .mini .it-area:nth-child(2) {
+      margin-left: 1rem; }
   .start-content .war-content .ingredients-area {
     width: 100%;
     margin-bottom: 2rem; }
@@ -216,6 +239,24 @@ header {
         margin: 1rem 0; }
     .start-content .war-content .mini-info-area .mini-info-content-box {
       width: 66.667%; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .content-ia {
+        width: 100%;
+        display: flex; }
+        .start-content .war-content .mini-info-area .mini-info-content-box .content-ia .content-i {
+          width: 50%;
+          border: 1px solid #c8ccd1;
+          background-color: #f8f9fa;
+          height: 100%;
+          min-height: 0; }
+          .start-content .war-content .mini-info-area .mini-info-content-box .content-ia .content-i img {
+            background-color: #ffffff;
+            border: 1px solid #c8ccd1; }
+          .start-content .war-content .mini-info-area .mini-info-content-box .content-ia .content-i span {
+            display: block;
+            margin: 1rem 0.5rem;
+            line-height: 1.5; }
+        .start-content .war-content .mini-info-area .mini-info-content-box .content-ia .content-i:nth-child(2) {
+          margin-left: 10px; }
       .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area {
         width: 100%; }
         .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area .image-slider-container {
@@ -383,7 +424,7 @@ header {
         .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box {
           display: flex;
           flex: 1 1 auto;
-          align-items: center;
+          align-items: flex-start;
           margin: 0.8rem 0; }
           .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area .allied-belligerents-box .allied-belligerents-list {
             width: 100%; }
