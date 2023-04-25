@@ -109,12 +109,16 @@ a {
   color: white;
   text-decoration: none; }
 
+a:hover {
+  text-decoration: underline; }
+
 .logo a:hover {
   text-decoration: none; }
 
 .menu li {
   font-size: 16px;
-  padding: 15px 5px; }
+  padding: 15px 5px;
+  white-space: nowrap; }
 
 .logo a,
 .toggle a {
@@ -131,11 +135,15 @@ a {
   align-items: center; }
 
 .toggle {
-  margin-right: -50%; }
+  order: 1; }
+
+.item.button {
+  order: 2; }
 
 .item {
   width: 100%;
   text-align: center;
+  order: 3;
   display: none; }
 
 .item.active {
@@ -530,7 +538,8 @@ a {
   background-color: #636e72;
   padding-bottom: 10px; }
   .source .source-content {
-    width: 100%; }
+    width: 100%;
+    word-break: break-word; }
     .source .source-content .source-title {
       text-align: center; }
       .source .source-content .source-title h3 {
@@ -707,13 +716,31 @@ a {
   .menu {
     justify-content: center; }
   .logo {
-    width: 10%; }
+    flex: 1; }
   .toggle {
-    margin-right: -500px; }
+    flex: 1;
+    text-align: right; }
   .item.button {
     width: auto;
     order: 1;
-    display: block; } }
+    display: block; }
+  .toggle {
+    order: 2; }
+  .button.secondary {
+    border: 0; }
+  .button a {
+    padding: 7.5px 15px;
+    background: teal;
+    border: 1px #006d6d solid; }
+  .button.secondary a {
+    background: transparent; }
+  .button a:hover {
+    text-decoration: none; }
+  .button:not(.secondary) a:hover {
+    background: #006d6d;
+    border-color: #005959; }
+  .button.secondary a:hover {
+    color: #ddd; } }
 
 @media all and (min-width: 900px) {
   .item {
