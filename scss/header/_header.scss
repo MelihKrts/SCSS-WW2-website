@@ -22,7 +22,6 @@ nav {
   .menu li {
     font-size: 16px;
     padding: 15px 5px;
-    white-space: nowrap;
   }
   .logo a,
   .toggle a {
@@ -41,13 +40,9 @@ nav {
   .toggle {
     order: 1;
   }
-  .item.button {
-    order: 2;
-  }
   .item {
     width: 100%;
     text-align: center;
-    order: 3;
     display: none;
   }
   .item.active {
