@@ -320,8 +320,9 @@
     }
 
     .toggle {
-        margin-right: -500px;
-    }
+        flex: 1;
+        text-align: right;
+      }
 
     .item.button {
         width: auto;
