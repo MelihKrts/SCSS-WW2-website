@@ -1,0 +1,40 @@
+.source{
+    width: 100%;
+    background-color: #636e72;
+    padding-bottom: 10px;
+
+    .source-content{
+        width: 100%;
+
+        .source-title{
+            text-align: center;
+            h3{
+                font-size: 1.5rem;
+                line-height: 1.4;
+                color: #fff;
+                display: block;
+                padding: 0.5rem 0;
+                font-weight: normal;
+            }
+        }
+
+        .source-list{
+            width: 100%;
+            ul{
+                li{
+                    list-style-type: disc;
+                    font-size: 1rem;
+                    color: #000;
+                    padding: 0.5rem 0;
+
+                    a{
+                        color: #fff;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+}

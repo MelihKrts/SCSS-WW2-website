@@ -1,0 +1,388 @@
+@media screen and (max-width: 1024px) {
+
+    .start-content {
+
+        p {
+            width: 95%;
+            margin: auto;
+            font-size: 1rem;
+
+        }
+
+        .mini-title {
+            margin-left: 1rem;
+        }
+
+        h2 {
+            margin-left: 1rem;
+        }
+
+        .border-bottom {
+            width: 90%;
+            margin-left: 1rem;
+        }
+
+        .war-content {
+
+            .mini {
+                flex-direction: column;
+
+                .it-area:nth-child(2) {
+                    margin: 10px auto;
+                }
+
+            }
+
+
+
+            .title-image-area {
+                .title-image {
+                    margin-left: 0.2rem;
+                }
+            }
+
+            .ww2-belligerents-area {
+                flex-direction: row;
+
+                .belligerents-main-box {
+                    width: 50%;
+                    position: sticky;
+                    top: 5rem;
+                    margin-left: 30px;
+
+                }
+
+                .belligerents-sides {
+                    width: 40%;
+
+                    .allied-belligerents-box-area {
+                        margin-left: 10px;
+                    }
+
+                }
+
+            }
+
+            .image {
+                width: 90%;
+                margin: 10px;
+            }
+
+            .mini-info-area {
+                flex-direction: row;
+
+                .mini-info-content-box {
+                    width: 50%;
+
+                    .content-ia {
+
+                        flex-direction: column;
+
+                        .content-i {
+                            width: 100%;
+                            margin-left: 5px;
+
+                        }
+
+                        .content-i:nth-child(2) {
+                            margin: 10px 5px;
+                        }
+
+
+                    }
+
+                    .info-content-image-text {
+                        margin-left: 0.5rem;
+                    }
+
+
+
+                    .image-slider-area {
+                        margin-left: 0.5rem;
+                    }
+
+                    .mini-main-title {
+                        h3 {
+
+                            margin-left: 0.5rem;
+
+                        }
+                    }
+
+                }
+
+                .mini-info-war-box {
+                    width: 50%;
+                    margin: 2rem 1rem;
+                }
+
+            }
+
+            .ingredients-area {
+                width: 90%;
+                margin-left: 1rem;
+            }
+
+
+
+        }
+
+    }
+
+    .source {
+
+        .source-content {
+
+            .source-list {
+                padding-left: 2rem;
+            }
+
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .table-of-contents-area {
+        .table-of-contents-list {
+            width: 90%;
+            margin-left: 10px;
+        }
+    }
+
+    .start-content {
+
+        .mini-title {
+            font-size: 1rem;
+            margin-left: 10px;
+            padding: 0.2rem 0;
+
+            h3 {
+                margin-left: -13px;
+            }
+
+        }
+
+
+        p {
+            font-size: 3vw;
+            width: 95%;
+            margin-left: 12px;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin-left: 10px;
+            padding: 0.2rem 0;
+        }
+
+        .border-bottom {
+            width: 90%;
+            margin-left: 0.7rem;
+        }
+
+        .war-content {
+
+            .mini {
+                flex-direction: column;
+
+                .it-area {
+                    width: 90%;
+                    margin: 10px auto;
+                }
+
+                .it-area:nth-child(2) {
+                    margin: 10px auto;
+                }
+
+            }
+
+            blockquote {
+                width: 90%;
+                padding: 5px 15px;
+                margin: 15px;
+            }
+
+            .title-image-area {
+                margin-left: 12px;
+                width: 95%;
+
+                .title-image {
+                    width: 2rem;
+                }
+            }
+
+            .image {
+                width: 90%;
+                margin-left: 12px;
+            }
+
+            .ingredients-area {
+                width: 95%;
+                margin-left: 1rem;
+            }
+
+
+            .ww2-belligerents-area {
+                flex-direction: column-reverse;
+                margin-top: -3rem;
+
+                .belligerents-main-box {
+                    width: 90%;
+                    margin: auto;
+                    position: relative;
+                }
+
+                .belligerents-sides {
+                    width: 90%;
+                    margin: 5rem 1.5rem;
+                }
+
+            }
+
+            .mini-info-area {
+                flex-direction: column-reverse;
+
+                .mini-ii-area {
+                    width: 90%;
+                    margin-left: 12px;
+                }
+
+                .sticky-div {
+                    position: relative;
+                    top: 0;
+                }
+
+                .mini-info-war-box {
+                    width: 90%;
+                    margin: 0.7rem;
+                }
+
+                .mini-info-content-box {
+
+                    width: 90%;
+                    margin-left: 5px;
+
+                    .content-ia {
+                        flex-direction: column;
+
+                        .content-i {
+                            width: 90%;
+                            margin: 10px auto;
+                        }
+
+                        .content-i:nth-child(2) {
+                            margin: 10px auto;
+                        }
+
+                    }
+
+
+                    .mini-main-title {
+                        margin-bottom: 0;
+                        margin-left: 12px;
+                    }
+
+                }
+
+            }
+
+            .title {
+                h2 {
+                    font-size: 1rem;
+                }
+            }
+
+
+        }
+
+    }
+
+}
+
+
+@media all and (min-width: 600px) {
+    .menu {
+        justify-content: center;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    .toggle {
+        flex: 1;
+        text-align: right;
+    }
+
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+
+    .toggle {
+        order: 2;
+    }
+
+    .button.secondary {
+        border: 0;
+    }
+
+    .button a {
+        padding: 7.5px 15px;
+        background: teal;
+        border: 1px #006d6d solid;
+    }
+
+    .button.secondary a {
+        background: transparent;
+    }
+
+    .button a:hover {
+        text-decoration: none;
+    }
+
+    .button:not(.secondary) a:hover {
+        background: #006d6d;
+        border-color: #005959;
+    }
+
+    .button.secondary a:hover {
+        color: #ddd;
+    }
+}
+
+
+@media all and (min-width: 900px) {
+    .item {
+        display: block;
+        width: auto;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .logo {
+        order: 0;
+    }
+
+    .item {
+        order: 1;
+    }
+
+    .button {
+        order: 2;
+    }
+
+    .menu li {
+        padding: 15px 10px;
+    }
+
+    .menu li.button {
+        padding-right: 0;
+    }
+}

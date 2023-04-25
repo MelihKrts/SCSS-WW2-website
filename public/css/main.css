@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   border: none;
+  list-style: none;
   box-sizing: border-box;
   font-family: 'Nunito Sans', sans-serif !important; }
 
@@ -53,11 +54,11 @@ img {
 
 b,
 strong {
-  font-weight: bold !important; }
+  font-weight: bold; }
 
 i,
 em {
-  font-style: italic !important; }
+  font-style: italic; }
 
 .anchor {
   margin-top: -60px;
@@ -93,34 +94,62 @@ em {
 
 header {
   width: 100%;
-  background-color: #000;
-  color: #fff;
   position: fixed;
   top: 0;
   z-index: 1; }
-  header .inclusive {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    header .inclusive .logo a {
-      font-size: 1.5rem;
-      padding: 1rem 0;
-      color: #fff; }
-    header .inclusive .link-flexbox {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      header .inclusive .link-flexbox li {
-        padding: 1rem 0.7rem;
-        font-size: 1rem; }
-        header .inclusive .link-flexbox li a {
-          color: #fff; }
+
+nav {
+  background: #222;
+  padding: 5px 20px; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+.logo a:hover {
+  text-decoration: none; }
+
+.menu li {
+  font-size: 16px;
+  padding: 15px 5px;
+  white-space: nowrap; }
+
+.logo a,
+.toggle a {
+  font-size: 20px; }
+
+.button.secondary {
+  border-bottom: 1px #444 solid; }
+
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; }
+
+.toggle {
+  order: 1; }
+
+.item.button {
+  order: 2; }
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none; }
+
+.item.active {
+  display: block; }
 
 .table-of-contents-area {
   width: 100%;
   background-color: #7f8c8d;
-  margin-top: 3rem;
+  margin-top: 4rem;
   color: #fff; }
   .table-of-contents-area .guide-title {
     font-size: 1.2rem;
@@ -172,7 +201,8 @@ header {
       background-color: #f8f9fa;
       margin-bottom: 1rem;
       height: 100%;
-      min-height: 0; }
+      min-height: 0;
+      margin: auto; }
       .start-content .war-content .mini .it-area .img {
         background-color: #ffffff;
         border: 1px solid #c8ccd1; }
@@ -237,6 +267,10 @@ header {
       .start-content .war-content .mini-info-area .mini-ii-area .mini-info-war-box {
         width: 100%;
         margin: 1rem 0; }
+    .start-content .war-content .mini-info-area .sticky-div {
+      position: sticky;
+      top: 4rem;
+      padding-bottom: 1rem; }
     .start-content .war-content .mini-info-area .mini-info-content-box {
       width: 66.667%; }
       .start-content .war-content .mini-info-area .mini-info-content-box .content-ia {
@@ -495,3 +529,225 @@ header {
       .start-content .war-content .belligerents-map-info-box .allied-color-main-box .pearl-harbor-span {
         width: 15rem;
         display: inline-block; }
+
+.source {
+  width: 100%;
+  background-color: #636e72;
+  padding-bottom: 10px; }
+  .source .source-content {
+    width: 100%; }
+    .source .source-content .source-title {
+      text-align: center; }
+      .source .source-content .source-title h3 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+        color: #fff;
+        display: block;
+        padding: 0.5rem 0;
+        font-weight: normal; }
+    .source .source-content .source-list {
+      width: 100%; }
+      .source .source-content .source-list ul li {
+        list-style-type: disc;
+        font-size: 1rem;
+        color: #000;
+        padding: 0.5rem 0; }
+        .source .source-content .source-list ul li a {
+          color: #fff; }
+
+.copyright {
+  width: 100%;
+  background-color: #dfe6e9;
+  padding-bottom: 10px; }
+  .copyright .copyright-text {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 10px; }
+    .copyright .copyright-text span {
+      color: #000; }
+
+@media screen and (max-width: 1024px) {
+  .start-content p {
+    width: 95%;
+    margin: auto;
+    font-size: 1rem; }
+  .start-content .mini-title {
+    margin-left: 1rem; }
+  .start-content h2 {
+    margin-left: 1rem; }
+  .start-content .border-bottom {
+    width: 90%;
+    margin-left: 1rem; }
+  .start-content .war-content .mini {
+    flex-direction: column; }
+    .start-content .war-content .mini .it-area:nth-child(2) {
+      margin: 10px auto; }
+  .start-content .war-content .title-image-area .title-image {
+    margin-left: 0.2rem; }
+  .start-content .war-content .ww2-belligerents-area {
+    flex-direction: row; }
+    .start-content .war-content .ww2-belligerents-area .belligerents-main-box {
+      width: 50%;
+      position: sticky;
+      top: 5rem;
+      margin-left: 30px; }
+    .start-content .war-content .ww2-belligerents-area .belligerents-sides {
+      width: 40%; }
+      .start-content .war-content .ww2-belligerents-area .belligerents-sides .allied-belligerents-box-area {
+        margin-left: 10px; }
+  .start-content .war-content .image {
+    width: 90%;
+    margin: 10px; }
+  .start-content .war-content .mini-info-area {
+    flex-direction: row; }
+    .start-content .war-content .mini-info-area .mini-info-content-box {
+      width: 50%; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .content-ia {
+        flex-direction: column; }
+        .start-content .war-content .mini-info-area .mini-info-content-box .content-ia .content-i {
+          width: 100%;
+          margin-left: 5px; }
+        .start-content .war-content .mini-info-area .mini-info-content-box .content-ia .content-i:nth-child(2) {
+          margin: 10px 5px; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .info-content-image-text {
+        margin-left: 0.5rem; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .image-slider-area {
+        margin-left: 0.5rem; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .mini-main-title h3 {
+        margin-left: 0.5rem; }
+    .start-content .war-content .mini-info-area .mini-info-war-box {
+      width: 50%;
+      margin: 2rem 1rem; }
+  .start-content .war-content .ingredients-area {
+    width: 90%;
+    margin-left: 1rem; }
+  .source .source-content .source-list {
+    padding-left: 2rem; } }
+
+@media screen and (max-width: 768px) {
+  .table-of-contents-area .table-of-contents-list {
+    width: 90%;
+    margin-left: 10px; }
+  .start-content .mini-title {
+    font-size: 1rem;
+    margin-left: 10px;
+    padding: 0.2rem 0; }
+    .start-content .mini-title h3 {
+      margin-left: -13px; }
+  .start-content p {
+    font-size: 3vw;
+    width: 95%;
+    margin-left: 12px; }
+  .start-content h2 {
+    font-size: 1rem;
+    margin-left: 10px;
+    padding: 0.2rem 0; }
+  .start-content .border-bottom {
+    width: 90%;
+    margin-left: 0.7rem; }
+  .start-content .war-content .mini {
+    flex-direction: column; }
+    .start-content .war-content .mini .it-area {
+      width: 90%;
+      margin: 10px auto; }
+    .start-content .war-content .mini .it-area:nth-child(2) {
+      margin: 10px auto; }
+  .start-content .war-content blockquote {
+    width: 90%;
+    padding: 5px 15px;
+    margin: 15px; }
+  .start-content .war-content .title-image-area {
+    margin-left: 12px;
+    width: 95%; }
+    .start-content .war-content .title-image-area .title-image {
+      width: 2rem; }
+  .start-content .war-content .image {
+    width: 90%;
+    margin-left: 12px; }
+  .start-content .war-content .ingredients-area {
+    width: 95%;
+    margin-left: 1rem; }
+  .start-content .war-content .ww2-belligerents-area {
+    flex-direction: column-reverse;
+    margin-top: -3rem; }
+    .start-content .war-content .ww2-belligerents-area .belligerents-main-box {
+      width: 90%;
+      margin: auto;
+      position: relative; }
+    .start-content .war-content .ww2-belligerents-area .belligerents-sides {
+      width: 90%;
+      margin: 5rem 1.5rem; }
+  .start-content .war-content .mini-info-area {
+    flex-direction: column-reverse; }
+    .start-content .war-content .mini-info-area .mini-ii-area {
+      width: 90%;
+      margin-left: 12px; }
+    .start-content .war-content .mini-info-area .sticky-div {
+      position: relative;
+      top: 0; }
+    .start-content .war-content .mini-info-area .mini-info-war-box {
+      width: 90%;
+      margin: 0.7rem; }
+    .start-content .war-content .mini-info-area .mini-info-content-box {
+      width: 90%;
+      margin-left: 5px; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .content-ia {
+        flex-direction: column; }
+        .start-content .war-content .mini-info-area .mini-info-content-box .content-ia .content-i {
+          width: 90%;
+          margin: 10px auto; }
+        .start-content .war-content .mini-info-area .mini-info-content-box .content-ia .content-i:nth-child(2) {
+          margin: 10px auto; }
+      .start-content .war-content .mini-info-area .mini-info-content-box .mini-main-title {
+        margin-bottom: 0;
+        margin-left: 12px; }
+  .start-content .war-content .title h2 {
+    font-size: 1rem; } }
+
+@media all and (min-width: 600px) {
+  .menu {
+    justify-content: center; }
+  .logo {
+    flex: 1; }
+  .toggle {
+    flex: 1;
+    text-align: right; }
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block; }
+  .toggle {
+    order: 2; }
+  .button.secondary {
+    border: 0; }
+  .button a {
+    padding: 7.5px 15px;
+    background: teal;
+    border: 1px #006d6d solid; }
+  .button.secondary a {
+    background: transparent; }
+  .button a:hover {
+    text-decoration: none; }
+  .button:not(.secondary) a:hover {
+    background: #006d6d;
+    border-color: #005959; }
+  .button.secondary a:hover {
+    color: #ddd; } }
+
+@media all and (min-width: 900px) {
+  .item {
+    display: block;
+    width: auto; }
+  .toggle {
+    display: none; }
+  .logo {
+    order: 0; }
+  .item {
+    order: 1; }
+  .button {
+    order: 2; }
+  .menu li {
+    padding: 15px 10px; }
+  .menu li.button {
+    padding-right: 0; } }
