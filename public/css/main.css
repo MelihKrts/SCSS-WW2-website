@@ -573,6 +573,10 @@ a:hover {
       color: #000; }
 
 @media screen and (max-width: 1024px) {
+  header {
+    position: relative; }
+  .table-of-contents-area {
+    margin-top: 0; }
   .start-content p {
     width: 95%;
     margin: auto;
