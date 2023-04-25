@@ -135,6 +135,13 @@
 
             .source-list {
                 padding-left: 2rem;
+
+                ul{
+                    li{
+                        word-break: break-word;
+                    }
+                }
+
             }
 
         }
